@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "stellarite:stellarite_ingot"
+  },
+  "base": {
+    "item": "minecraft:diamond_hoe"
+  },
+  "result": {
+    "count": 1,
+    "id": "stellarite:stellarite_hoe"
+  },
+  "template": {
+    "item": "stellarite:stellarite_upgrade"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "stellarite:stellarite_nugget"
+    },
+    "C": {
+      "item": "minecraft:chorus_fruit"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "NCN",
+    "NNN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellarite:stellarite_chorus_fruit"
+  }
+}

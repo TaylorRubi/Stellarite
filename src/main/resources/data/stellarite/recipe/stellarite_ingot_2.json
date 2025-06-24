@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "ingredients",
+"ingredients": [
+  {
+    "item": "stellarite:stellarite_block"
+  }
+],
+
+    "result": {
+      "id": "stellarite:stellarite_ingot",
+      "count": 9
+    }
+  }

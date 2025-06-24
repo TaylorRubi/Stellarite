@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "stellarite:stellarite_upgrade"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "pattern": [
+    "DTD",
+    "DED",
+    "DDD"
+  ],
+  "result": {
+    "count": 2,
+    "id": "stellarite:stellarite_upgrade"
+  }
+}
