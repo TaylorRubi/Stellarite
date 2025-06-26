@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import taylorrubi.stellarite.block.ModBlocks;
 import taylorrubi.stellarite.item.Moditems;
 import taylorrubi.stellarite.util.ModLootTableModifiers;
+import taylorrubi.stellarite.world.gen.ModOreGeneration;
 
 public class Stellarite implements ModInitializer {
 	public static final String MOD_ID = "stellarite";
@@ -23,6 +24,7 @@ public class Stellarite implements ModInitializer {
 		Moditems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModLootTableModifiers.modifyLootTables();
+		ModOreGeneration.generateOres();
 
 		LOGGER.info("Muahaha I'm turning evil... (im working)");
 	}

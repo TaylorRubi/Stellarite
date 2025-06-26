@@ -31,10 +31,6 @@ public class ModBlocks {
                 new BlockItem(block, new Item.Settings()));
     }
 
-    private static void registerModBlockItem(String name, Block block) {
-
-    }
-
     public static void registerModBlocks() {
         Stellarite.LOGGER.info("Registering Mod Blocks for " + Stellarite.MOD_ID);
 
