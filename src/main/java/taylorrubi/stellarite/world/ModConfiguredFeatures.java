@@ -22,7 +22,7 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest endReplaceable = new BlockMatchRuleTest(Blocks.END_STONE);
-        ;
+
         List<OreFeatureConfig.Target> stellariteOre =
                 List.of(OreFeatureConfig.createTarget(endReplaceable, ModBlocks.STELLARITE_ORE.getDefaultState()));
         register(context, STELLARITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(stellariteOre, 3));
