@@ -4,6 +4,10 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
+import taylorrubi.stellarite.datagen.ModBlockTagProvider;
+import taylorrubi.stellarite.datagen.ModItemTagProvider;
+import taylorrubi.stellarite.datagen.ModModelProvider;
+import taylorrubi.stellarite.datagen.ModWorldGenerator;
 import taylorrubi.stellarite.world.ModConfiguredFeatures;
 import taylorrubi.stellarite.world.ModPlacedFeatures;
 
@@ -17,7 +21,12 @@ import taylorrubi.stellarite.world.ModPlacedFeatures;
 public class StellariteDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
+		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
+		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+		pack.addProvider(ModItemTagProvider::new);
 	}
 
 	@Override

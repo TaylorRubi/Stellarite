@@ -1,6 +1,7 @@
 package taylorrubi.stellarite.world;
 
 import net.minecraft.registry.Registerable;
+import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -15,14 +16,22 @@ import taylorrubi.stellarite.world.gen.ModOreGeneration;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static final RegistryKey<PlacedFeature> STELLARITE_ORE_PLACED_KEY = registerKey("end_pink_garnet_ore_placed");
+    public static final RegistryKey<PlacedFeature> STELLARITE_ORE_PLACED_KEY = registerKey("stellarite_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
-        var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+        RegistryEntryLookup<ConfiguredFeature<?, ?>> configuredFeatures
+                = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
+        /**
+         * hey taylor!
+         *
+         * i copied the values from a json file i found in this project, adjust as needed!
+         *
+         * pin
+         */
         register(context, STELLARITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.STELLARITE_ORE_KEY),
-                ModOrePlacement.generateOres(14,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(3,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(250))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
