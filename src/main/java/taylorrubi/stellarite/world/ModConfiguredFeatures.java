@@ -25,7 +25,7 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> stellariteOre =
                 List.of(OreFeatureConfig.createTarget(endReplaceable, ModBlocks.STELLARITE_ORE.getDefaultState()));
-        register(context, STELLARITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(stellariteOre, 3));
+        register(context, STELLARITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(stellariteOre, 5));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

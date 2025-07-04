@@ -22,16 +22,10 @@ public class ModPlacedFeatures {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> configuredFeatures
                 = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        /**
-         * hey taylor!
-         *
-         * i copied the values from a json file i found in this project, adjust as needed!
-         *
-         * pin
-         */
+        //hi :3
         register(context, STELLARITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.STELLARITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(3,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(250))));
+                ModOrePlacement.modifiersWithCount(5,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(120))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
