@@ -4,15 +4,17 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import taylorrubi.stellarite.Stellarite;
 import taylorrubi.stellarite.item.custom.StellariteChorusFruitItem;
+import net.minecraft.item.SmithingTemplateItem
 
 public class Moditems {
     public static final Item STELLARITE_INGOT = registerItem( "stellarite_ingot", new Item(new Item.Settings()));
     public static final Item STELLARITE_SCRAP = registerItem( "stellarite_scrap", new Item(new Item.Settings()));
     public static final Item STELLARITE_NUGGET = registerItem( "stellarite_nugget", new Item(new Item.Settings()));
-    public static final Item STELLARITE_UPGRADE = registerItem( "stellarite_upgrade", new Item(new Item.Settings()));
+    public static final Item STELLARITE_UPGRADE = registerItem( "stellarite_upgrade", new SmithingTemplateItem(Text.of());
     public static final Item IFO = registerItem( "ifo", new Item(new Item.Settings()));
     public static final Item STELLARITE_CHORUS_FRUIT = registerItem( "stellarite_chorus_fruit", new StellariteChorusFruitItem(new Item.Settings().food(ModFoodComponents.STELLARITE_CHORUS_FRUIT)));
 

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "stellarite:stellarite_pickaxe",
+    "stellarite:stellarite_axe",
+    "stellarite:stellarite_shovel",
+    "stellarite:stellarite_hoe"
+  ]
+
+}
