@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "ingredients",
-"ingredients": [
-  {
-    "item": "stellarite:stellarite_ingot"
-  }
-],
-
-    "result": {
-      "id": "stellarite:stellarite_nugget",
-      "count": 9
+  "ingredients": [
+    {
+      "item": "stellarite:stellarite_ingot"
     }
+  ],
+
+  "result": {
+    "id": "stellarite:stellarite_nugget",
+    "count": 9
   }
+}

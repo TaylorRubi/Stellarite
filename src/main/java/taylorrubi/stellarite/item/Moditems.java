@@ -16,6 +16,7 @@ public class Moditems {
     public static final Item STELLARITE_UPGRADE = registerItem( "stellarite_upgrade", new Item(new Item.Settings()));
     public static final Item IFO = registerItem( "ifo", new Item(new Item.Settings()));
     public static final Item STELLARITE_CHORUS_FRUIT = registerItem( "stellarite_chorus_fruit", new StellariteChorusFruitItem(new Item.Settings().food(ModFoodComponents.STELLARITE_CHORUS_FRUIT)));
+    //public static final Item STELLARITE_COIN = registerItem( "stellarite_coin", new Item(new Item.Settings()));
 
     public static final Item STELLARITE_SWORD = registerItem("stellarite_sword",
             new SwordItem(ModToolMaterials.STELLARITE, new Item.Settings()
